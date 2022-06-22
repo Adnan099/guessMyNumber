@@ -172,19 +172,19 @@ h1 {
     left: 50%;
     transform: translate(-50%, 50%);
   }
-
+  
   .between {
     font-size: 1.4rem;
     width: 20rem;
     position: absolute;
     top: 2rem;
-    right: 5rem;
+    right: 1rem;
   }
 
   .again {
     position: absolute;
     top: 2rem;
-    left: 5rem;
+    left: 2rem;
   }
 
   .guess {
