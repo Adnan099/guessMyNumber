@@ -2,9 +2,6 @@ let secretNumber = Math.trunc(Math.random() * 100) + 1;
 let score = 15;
 let highScore = 0;
 
-// To delete in the end
-document.querySelector('.number').textContent = secretNumber;
-
 // Display Message
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
