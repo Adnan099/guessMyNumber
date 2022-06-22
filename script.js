@@ -1,4 +1,4 @@
-let secretNumber = Math.trunc(Math.random() * 100) + 1;
+let secretNumber = Math.trunc(Math.random() * 99) + 1;
 let score = 15;
 let highScore = 0;
 
@@ -39,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.score').textContent = score;
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('input').disabled = false;
-    secretNumber = Math.trunc(Math.random() * 100) + 1;
+    secretNumber = Math.trunc(Math.random() * 99) + 1;
     document.querySelector('.number').textContent = secretNumber;
   });
 });
