@@ -16,6 +16,7 @@ document.querySelector('.check').addEventListener('click', function () {
     displayMessage('😭 No Number!');
   } else if (guess === secretNumber) {
     displayMessage('🙌 Correct Number!');
+    document.querySelector('.number').textContent = secretNumber;
     document.querySelector('input').disabled = true;
     document.querySelector('body').style.backgroundColor = '#60b347';
     if (score > highScore) {
@@ -40,6 +41,6 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('input').disabled = false;
     secretNumber = Math.trunc(Math.random() * 99) + 1;
-    document.querySelector('.number').textContent = secretNumber;
+    document.querySelector('.number').textContent = '?';
   });
 });
