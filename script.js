@@ -42,5 +42,6 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('input').disabled = false;
     secretNumber = Math.trunc(Math.random() * 99) + 1;
     document.querySelector('.number').textContent = '?';
+    document.querySelector('.guess').value = '';
   });
 });
